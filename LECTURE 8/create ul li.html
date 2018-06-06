@@ -1,0 +1,55 @@
+<!--READ DOM AND OPTIMZATION-->
+<!--list.append(....[li1,li2])-->
+<!--.... spread operator-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AYUSHVERMA</title>
+</head>
+<body>
+<div id="container">
+    <button onclick="execute()">DATE</button>
+</div>
+</body>
+<script>
+    function execute() {
+    var i;
+    var list= document.createElement('ul');
+    var d = new Date();
+    var first = d.getMilliseconds()
+    console.log(first);
+    for(var i=0 ; i < 100 ; i++){
+        if(i%15 == 0){
+            var a = document.createElement("li");
+            a.innerHTML='fizzbuzz';
+            list.appendChild(a);
+        }
+        else if(i%5 == 0){
+            var a = document.createElement("li");
+            a.innerHTML='buzz';
+            list.appendChild(a);
+        }
+        else if(i%3 == 0){
+            var a = document.createElement("li");
+            a.innerHTML='fizz';
+            list.appendChild(a);
+        }
+        else{
+
+            var a = document.createElement("li");
+            a.innerHTML=i;
+            list.appendChild(a);
+        }
+
+        console.log(z);
+        document.getElementById('container').appendChild(list);
+    }
+    var second = d.getMilliseconds()
+    console.log(second);
+    var z= second-first;
+    console.log(z);
+    }
+</script>
+</html>

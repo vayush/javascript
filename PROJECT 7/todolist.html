@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>To Do LIST</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="text-center">
+                    TODOLIST
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 ml-auto">
+                <input type="text" class="form-control" id="add-new-todo">
+            </div>
+            <div class="col-sm-2 mr-auto">
+            <div class="btn btn-primary" id="add-btn">
+                <i class="fa fa-plus-circle"></i>
+            </div>
+            <button class="btn btn-danger" id="del-btn">
+                <i class="fa fa-trash"></i>
+            </button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-10 ml-auto mr-auto">
+                <ul class="list-group" id="list">
+                    <li class="list-group-item">
+                        <span class="col-8">
+                            task1
+                        </span>
+                        <i class="col-1"></i>
+                        <i class="col-1 fa fa-chevron-up"></i>
+                        <i class="col-1 fa fa-chevron-down"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AYUSHVERMA</title>
+</head>
+<body>
+<div id="container">
+    <button onclick="execute()">DATE</button>
+</div>
+</body>
+<script>
+    function execute() {
+        var i;
+        var list= document.createElement('ul');
+        var d = new Date();
+        var first = d.getMilliseconds()
+        console.log(first);
+        var c3=1 , c5=1;
+        for(var i=0 ; i < 100 ; i++){
+            if(c3 == 3){
+                var a = document.createElement("li");
+                a.innerHTML='fizzbuzz';
+                list.appendChild(a);
+            }
+            if(c5 == 5){
+                var a = document.createElement("li");
+                a.innerHTML='buzz';
+                list.appendChild(a);
+            }
+            c3++ ;
+            c5 ++ ;
+            console.log(z);
+            document.getElementById('container').appendChild(list);
+        }
+        var second = d.getMilliseconds()
+        console.log(second);
+        var z= second-first;
+        console.log(z);
+    }
+</script>
+</html>

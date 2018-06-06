@@ -1,0 +1,14 @@
+{
+  "name": "node-modules",
+  "version": "0.1.0",
+  "description": "This is a sample node module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ayush Verma <vayush967@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
